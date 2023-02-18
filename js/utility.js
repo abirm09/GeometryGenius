@@ -18,6 +18,13 @@ function getSecondInput(event) {
     "";
   return inputValue;
 }
+// get the formula value and precision with 2
+function makeFormulaValuePrecision(formula) {
+  const resultString = formula.toFixed(2);
+  const result = parseFloat(resultString);
+  return result;
+}
+
 //create Result List and append
 function createResultList(event, result, serial) {
   const formulaName =
