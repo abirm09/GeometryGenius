@@ -6,76 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind and daisyui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="./styles/style.css">
     <title>Blog</title>
 
 </head>
-<main>
-    <section class="question-answer-section mt-5">
-        <div class="container mx-auto px-5">
-            <h2 class="text-center text-2xl font-bold">Questions Answers</h2>
-            <div class="question-answer space-y-5">
-                <div>
-                    <h2 class="ml-0 md:ml-5 font-bold">1. What is DOM and what is the purpose of DOM?</h2>
-                    <div class="ml-0 md:ml-5 font-normal">
-                        <p>
-                            DOM's full meaning is Document Object Model.When a webpage is loaded, browser js
-                            engine create <strong title="Document Object Model">DOM</strong> .Then javascript gets
-                            power to create, remove, modify
-                            html elements.And javascript did this dynamically.
-                        </p>
-                        <ul class="list-disc ml-3 md:ml-8">
-                            <li>Javascript DOM can <strong>create</strong> HTML element.</li>
-                            <li>Javascript DOM can <strong>change</strong> HTML element.</li>
-                            <li>Javascript DOM can add <strong>CSS</strong>.</li>
-                            <li>Javascript DOM can create HTML <strong>events</strong>.</li>
-                            <li>Javascript can do many more things.</li>
-                        </ul>
-                    </div>
 
-                </div>
-                <div>
-                    <h2 class="ml-0 md:ml-5 font-bold">2. How will you select HTML elements using DOM? Name the DOM
-                        methods.</h2>
-                    <div class="ml-0 md:ml-5 font-normal">
-                        <p>There are many ways to select HTML elements.Some of them are:</p>
-                        <ul class="list-disc ml-3 md:ml-8">
-                            <li>document.<span>getElementById</span>("id-name");</li>
-                            <li>document.<span>getElementsByClassName</span>("class-name");</li>
-                            <li>document.<span>getElementsByTagName</span>("tag-name");</li>
-                            <li>document.<span>querySelector</span> (".class-name or #id-name");</li>
-                            <li>document.<span>querySelectorAll</span>(".class-name or tag-name");</li>
-                            <li>etc.</li>
-                        </ul>
+
+<body>
+    <main>
+        <section class="question-answer-section mt-5">
+            <div class="container mx-auto px-5">
+                <h2 class="text-center text-2xl font-bold">Questions Answers</h2>
+                <div class="question-answer space-y-5">
+                    <div>
+                        <h2 class="ml-0 md:ml-5 font-bold">1. What is DOM and what is the purpose of DOM?</h2>
+                        <div class="ml-0 md:ml-5 font-normal">
+                            <p>
+                                DOM's full meaning is Document Object Model.When a webpage is loaded, browser js
+                                engine create <strong title="Document Object Model">DOM</strong> .Then javascript gets
+                                power to create, remove, modify
+                                html elements.And javascript did this dynamically.
+                            </p>
+                            <ul class="list-disc ml-3 md:ml-8">
+                                <li>Javascript DOM can <strong>create</strong> HTML element.</li>
+                                <li>Javascript DOM can <strong>change</strong> HTML element.</li>
+                                <li>Javascript DOM can add <strong>CSS</strong>.</li>
+                                <li>Javascript DOM can create HTML <strong>events</strong>.</li>
+                                <li>Javascript can do many more things.</li>
+                            </ul>
+                        </div>
+
                     </div>
-                </div>
-                <div>
-                    <h2 class="ml-0 md:ml-5 font-bold">3. What is event bubble?</h2>
-                    <div class="ml-3 md:ml-5 font-normal  ">
-                        <p>In event bubbling, if we add click event on an element the event can travel up from
-                            the
-                            triggered element to its parent element. It's also call event propagation.We can
-                            prevent
-                            this propagation by stopPropagation() method.</p>
+                    <div>
+                        <h2 class="ml-0 md:ml-5 font-bold">2. How will you select HTML elements using DOM? Name the DOM
+                            methods.</h2>
+                        <div class="ml-0 md:ml-5 font-normal">
+                            <p>There are many ways to select HTML elements.Some of them are:</p>
+                            <ul class="list-disc ml-3 md:ml-8">
+                                <li>document.<span>getElementById</span>("id-name");</li>
+                                <li>document.<span>getElementsByClassName</span>("class-name");</li>
+                                <li>document.<span>getElementsByTagName</span>("tag-name");</li>
+                                <li>document.<span>querySelector</span> (".class-name or #id-name");</li>
+                                <li>document.<span>querySelectorAll</span>(".class-name or tag-name");</li>
+                                <li>etc.</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h2 class="ml-0 md:ml-5 font-bold">4. What is a callback function and why will you use it?</h2>
-                    <div class="ml-0 md:ml-5 font-normal  ">
-                        <p>
-                            If a function receive a function as an argument that call's a callback
-                            function.A callback function is used to execute code in response to an event.
-                        </p>
+                    <div>
+                        <h2 class="ml-0 md:ml-5 font-bold">3. What is event bubble?</h2>
+                        <div class="ml-3 md:ml-5 font-normal  ">
+                            <p>In event bubbling, if we add click event on an element the event can travel up from
+                                the
+                                triggered element to its parent element. It's also call event propagation.We can
+                                prevent
+                                this propagation by stopPropagation() method.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="ml-0 md:ml-5 font-bold">4. What is a callback function and why will you use it?</h2>
+                        <div class="ml-0 md:ml-5 font-normal  ">
+                            <p>
+                                If a function receive a function as an argument that call's a callback
+                                function.A callback function is used to execute code in response to an event.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-    </section>
-</main>
-
-<body>
+        </section>
+    </main>
 </body>
 
 </html>
