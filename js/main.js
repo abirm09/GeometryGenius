@@ -11,10 +11,6 @@ document.getElementById("triangle").addEventListener("click", function (event) {
     return;
   }
   serial++;
-  //display input value one
-  displayValueOne(event, firstInput);
-  //display input value Two
-  displayValueTwo(event, secondInput);
   //main formula
   const formula = 0.5 * firstInput * secondInput;
   const resultString = formula.toFixed(2);

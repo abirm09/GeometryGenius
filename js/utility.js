@@ -18,22 +18,13 @@ function getSecondInput(event) {
     "";
   return inputValue;
 }
-//display VAlue one
-function displayValueOne(event, inputValue) {
-  event.target.parentNode.parentNode.children[0].children[1].children[0].innerText =
-    inputValue;
-}
-function displayValueTwo(event, inputValue) {
-  event.target.parentNode.parentNode.children[0].children[1].children[1].innerText =
-    inputValue;
-}
 //create Result List and append
 function createResultList(event, result, serial) {
   const formulaName =
     event.target.parentNode.parentNode.children[0].children[0].innerText;
   const newList = document.createElement("li");
   newList.innerHTML = `
-  <li class="flex justify-between"><span>${serial}. <span> ${formulaName}</span></span> <span>${result}</span> <span
+  <li class="flex justify-between"><span>${serial}. <span> ${formulaName}</span></span> <span>${result}cm<sup>2</sup></span> <span
                     class="py-1 px-3 rounded-md bg-sky-500 select-none cursor-pointer text-sm text-white">Covert to
                     m<sup>2</sup></span>
             </li>
