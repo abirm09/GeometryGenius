@@ -1,3 +1,4 @@
+//calculation functions
 // triangle calculation
 let serial = 0;
 document.getElementById("triangle").addEventListener("click", function (event) {
@@ -126,3 +127,12 @@ document.getElementById("ellipse").addEventListener("click", function (event) {
   //create Result List and append
   createResultList(event, result, serial);
 });
+
+// ended calculation functions
+const cardElements = document.getElementsByClassName("card");
+for (let card of cardElements) {
+  card.addEventListener("mouseover", function (event) {
+    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    this.style.backgroundColor = randomColor;
+  });
+}
